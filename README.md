@@ -1,7 +1,7 @@
 ```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/LegoGenocides/katerhub/refs/heads/main/files/loader.lua'))({
 	AntiAfk = true;
-	nsfw = true;
+	nsfw = false; -- this is a big nono!
 })
 ```
 <div align="left">
