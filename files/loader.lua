@@ -1,5 +1,6 @@
 -- // katerhub v5 loader //
-local katerhubgithub = 'https://raw.githubusercontent.com/LegoGenocides/katerhub/'
+local github = 'https://raw.githubusercontent.com/LegoGenocides/katerhub/' -- katerhubs github path
+local payload = (...)
 local GetHttp = function(url)
     local success,response = pcall(function()
         return game:HttpGet(url)
@@ -11,11 +12,14 @@ local GetHttp = function(url)
     return nil, response
 end
 
-local Game = GetHttp(katerhubgithub .. 'refs/heads/main/files/addons/'..tostring(game.PlaceId)..'.lua')
+local Game = GetHttp(github .. 'refs/heads/main/files/addons/' .. tostring(game.PlaceId) .. '.lua')
 if Game then
-    loadstring(Game)()
+    katerhub = loadstring(Game)
 else
-    loadstring(
-        GetHttp(katerhubgithub .. 'refs/heads/main/files/universal.lua')
-    )()
+    local universal = GetHttp(github .. 'refs/heads/main/files/universal.lua')
+    if universal then
+        katerhub = loadstring(universal)
+    end
 end
+
+if katerhub then katerhub(payload) else print("[katerhub] universal url not avalibe") end
