@@ -15,5 +15,7 @@ local Game = GetHttp(katerhubgithub .. 'refs/heads/main/files/addons/'..tostring
 if Game then
     loadstring(Game)()
 else
-    loadstring(katerhubgithub .. 'refs/heads/main/files/universal.lua')()
+    loadstring(
+        GetHttp(katerhubgithub .. 'refs/heads/main/files/universal.lua')
+    )()
 end
