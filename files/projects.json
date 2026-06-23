@@ -30,11 +30,11 @@
       "title": "Roblox Sniper",
       "description": "Powerful, anonymous & safe tool to find roblox players and roblox servers.",
       "image": "",
-      "label": "Tool",
+      "label": "Paid",
       "labelStyle": {
-        "bg": "rgba(59, 130, 246, 0.26)",
-        "border": "rgba(59, 130, 246, 0.55)",
-        "color": "#d7e9ff"
+        "bg": "rgba(252, 186, 3, 0.18)",
+        "border": "rgba(171, 126, 0, 0.35)",
+        "color": "#ffd04d"
       },
       "buttonText": "Visit on Roblox",
       "buttonLink": "https://www.roblox.com/games/122182907134835/",
@@ -45,26 +45,7 @@
         "hoverBorder": "rgba(59,130,246,0.55)",
         "color": "#d7e9ff"
       }
-    },
-    {
-      "title": "Roblox Redirector",
-      "description": "Used for katerhub and external roblox redirection tools.",
-      "image": "",
-      "label": "Tool",
-      "labelStyle": {
-        "bg": "rgba(59, 130, 246, 0.26)",
-        "border": "rgba(59, 130, 246, 0.55)",
-        "color": "#d7e9ff"
-      },
-      "buttonText": "Visit",
-      "buttonLink": "https://legogenocides.github.io/RbxRedirector/",
-      "buttonStyle": {
-        "bg": "rgba(59,130,246,0.16)",
-        "border": "rgba(59,130,246,0.35)",
-        "hoverBg": "rgba(59,130,246,0.26)",
-        "hoverBorder": "rgba(59,130,246,0.55)",
-        "color": "#d7e9ff"
-      }
+    }
     }
   ]
 }
